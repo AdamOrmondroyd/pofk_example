@@ -69,11 +69,7 @@ params:
     latex: k_{c,\mathrm{feaure}}
   logwidth:
     prior: [1e-3, 3]
-<<<<<<< HEAD
     ref: {dist: norm, loc: 0.1, scale: 0.02}
-=======
-    ref: {dist: norm, log: 0.1, scale: 0.02}
->>>>>>> d086c4d1d244aa7dd0798c34fb6eb2d83aa713c5
     proposal: 0.05
     latex: w_\mathrm{feature}
   # end
