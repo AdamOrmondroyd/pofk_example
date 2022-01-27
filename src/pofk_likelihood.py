@@ -7,7 +7,6 @@ class SimulatedLikelihood(CMBlikes):
     """
 
     Alens_delens = None
-    dataset_file = None
 
     def get_requirements(self):
         req = super().get_requirements()
