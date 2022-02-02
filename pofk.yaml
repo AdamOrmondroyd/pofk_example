@@ -43,7 +43,7 @@ params:
     latex: l_\mathrm{feature}
   logcentre:
     prior: [-1.15, -0.3]
-    ref: {dist: norm, loc: 0.7, scale: 0.008}
+    ref: {dist: norm, loc: -0.7, scale: 0.008}
     proposal: 0.1
     latex: \log_{10} k_{c,\mathrm{feature}}
   centre:
