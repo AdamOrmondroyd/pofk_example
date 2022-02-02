@@ -1,3 +1,18 @@
+"""
+# Recreating the P(k) example from Cobaya paper https://arxiv.org/pdf/2005.05290.pdf
+
+Here we define a Theory class that computes P(k), which only needs two methods:
+1. Returning what the class can compute starting with get_, in this case get_primordial_pk()
+2. calculate() taking the parameters defining the power spectrum and computing it.
+
+The class attribute params defines what parameters are the ones which need to be passed
+to this class, and which are made available by this likelihood.
+The remaining class attributes defind (n_samples_wavelength and k_pivot) define parameters
+that can be set in the declaration of the class in the .yaml/their default values if omitted.
+
+
+"""
+
 import numpy as np
 from cobaya.theory import Theory
 
@@ -55,6 +70,7 @@ class FeaturePrimordialPk(Theory):
     k_pivot = 0.05
 
     def calculate(self, state, want_derived=True, **params_values_dict):
+        print("here0")
         As, ns, amplitude, wavelength, centre, logwidth = [
             params_values_dict[p] for p in self.params.keys()
         ]
@@ -71,6 +87,8 @@ class FeaturePrimordialPk(Theory):
             n_samples_wavelength=self.n_samples_wavelength,
         )
         state["primordial_scalar_pk"] = {"k": ks, "Pk": Pks, "log_regular": False}
+        print(ks)
+        print(Pks)
 
     def get_primordial_scalar_pk(self):
         return self.current_state["primordial_scalar_pk"]
