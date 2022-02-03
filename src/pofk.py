@@ -70,7 +70,7 @@ class FeaturePrimordialPk(Theory):
     k_pivot = 0.05
 
     def calculate(self, state, want_derived=True, **params_values_dict):
-        print("here0")
+        # print("here0")
         As, ns, amplitude, wavelength, centre, logwidth = [
             params_values_dict[p] for p in self.params.keys()
         ]
@@ -87,8 +87,8 @@ class FeaturePrimordialPk(Theory):
             n_samples_wavelength=self.n_samples_wavelength,
         )
         state["primordial_scalar_pk"] = {"k": ks, "Pk": Pks, "log_regular": False}
-        print(ks)
-        print(Pks)
+        # print(ks)
+        # print(Pks)
 
     def get_primordial_scalar_pk(self):
         return self.current_state["primordial_scalar_pk"]
