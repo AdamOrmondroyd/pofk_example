@@ -4,3 +4,4 @@ runs/
 submit*
 machine*
 slurm*
+.vscode/
