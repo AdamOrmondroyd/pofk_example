@@ -9,8 +9,6 @@ The class attribute params defines what parameters are the ones which need to be
 to this class, and which are made available by this likelihood.
 The remaining class attributes defind (n_samples_wavelength and k_pivot) define parameters
 that can be set in the declaration of the class in the .yaml/their default values if omitted.
-
-
 """
 
 import numpy as np

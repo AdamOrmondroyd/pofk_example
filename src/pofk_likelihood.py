@@ -1,3 +1,9 @@
+"""
+Note that this code isn't actually used at all here. This would be necessary if I had my own data
+files which I wanted to specify to be used for the likelihood, but the default is fine. Will leave
+it here for future reference though
+"""
+
 from cobaya.likelihoods.base_classes import CMBlikes
 
 
