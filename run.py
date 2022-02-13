@@ -13,7 +13,7 @@ resume = True
 cobaya.run(
     "pofk.yaml",
     "packages",
-    "runs/pofk",
+    "runs/attempt_2/pofk",
     resume=resume,
     force=not resume,
     test=False,
