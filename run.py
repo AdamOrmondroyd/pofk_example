@@ -11,11 +11,11 @@ resume = True
 
 ## custom pofk
 cobaya.run(
-    "pofk.yaml",
+    "attempt_3.yaml",
     "packages",
-    "runs/attempt_2/pofk",
+    "runs/attempt_3/pofk",
     resume=resume,
     force=not resume,
-    test=False,
+    test=True,
     debug=False,
 )
