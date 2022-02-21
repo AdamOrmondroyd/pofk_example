@@ -5,3 +5,4 @@ submit*
 machine*
 slurm*
 .vscode/
+run*.py
