@@ -19,6 +19,9 @@ theory:
       - 20
       - 100
 likelihood:
+  # work out how to turn on delensing: non-delensed = fully lensed
+  # the feature we're looking at can only be seen when considering delensing
+  # I'll have to generate my own datasets for the dataset_file bits
   planck_2018_lowl.TT: null
   planck_2018_lowl.EE: null
   planck_2018_highl_plik.TTTEEE: null
