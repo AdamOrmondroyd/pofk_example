@@ -23,6 +23,7 @@ def feature_envelope(k, c, w):
 
     """
     return np.exp(-((np.log10(k / c) / w) ** 2) / 2)  ## um where's sine gone?
+    # 1) just plot these to test
 
 
 def feature_power_spectrum(
