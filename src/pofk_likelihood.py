@@ -9,14 +9,14 @@ from cobaya.likelihoods.base_classes import CMBlikes
 
 class SimulatedLikelihood(CMBlikes):
     """
-    Likelihood of a parially-delensed CMB survey dataset.
+    Likelihood of a partially-delensed CMB survey dataset.
     """
 
     Alens_delens = None
 
     def get_requirements(self):
         req = super().get_requirements()
-        req["CMBdata"] = None
+        req["CAMBdata"] = None
         return req
 
     def logp(self, **data_params):
